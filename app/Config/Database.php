@@ -5,42 +5,40 @@ namespace Config;
 use CodeIgniter\Database\Config;
 
 /**
- * Database Configuration
+ * Configuración de la base de datos
  */
 class Database extends Config
 {
     /**
-     * The directory that holds the Migrations
-     * and Seeds directories.
+     * Directorio que almacena Migraciones y Seeds
      *
      * @var string
      */
     public $filesPath = APPPATH . 'Database' . DIRECTORY_SEPARATOR;
 
     /**
-     * Lets you choose which connection group to
-     * use if no other is specified.
+     * Grupo de conexión a ser utilizado
      *
      * @var string
      */
     public $defaultGroup = 'default';
 
     /**
-     * The default database connection.
+     * Conexión base
      *
      * @var array
      */
     public $default = [
         'DSN'      => '',
-        'hostname' => 'localhost',
-        'username' => '',
-        'password' => '',
-        'database' => '',
+        'hostname' => 'localhost', //dominio donde se almacena la base de datos
+        'username' => 'root', //usuario root de la base de datos
+        'password' => 'Itzamar_04', //contraseña de la base de datos
+        'database' => 'dbSicosac', //nombre de la base de datos
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
         'DBDebug'  => (ENVIRONMENT !== 'production'),
-        'charset'  => 'utf8',
+        'charset'  => 'utf8_bin',
         'DBCollat' => 'utf8_general_ci',
         'swapPre'  => '',
         'encrypt'  => false,
@@ -51,8 +49,7 @@ class Database extends Config
     ];
 
     /**
-     * This database connection is used when
-     * running PHPUnit database tests.
+     * Conexión para PHPUnit
      *
      * @var array
      */

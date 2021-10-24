@@ -23,7 +23,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://localhost:8080/';
+    public $baseURL = 'http://sicosac.local';
 
     /**
      * --------------------------------------------------------------------------
@@ -36,7 +36,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $indexPage = 'index.php';
+    public $indexPage = '';
 
     /**
      * --------------------------------------------------------------------------
@@ -61,15 +61,11 @@ class App extends BaseConfig
      * --------------------------------------------------------------------------
      * Default Locale
      * --------------------------------------------------------------------------
-     *
-     * The Locale roughly represents the language and location that your visitor
-     * is viewing the site from. It affects the language strings and other
-     * strings (like currency markers, numbers, etc), that your program
-     * should run under for this request.
+     *Lenguaje por defecto
      *
      * @var string
      */
-    public $defaultLocale = 'en';
+    public $defaultLocale = 'es';
 
     /**
      * --------------------------------------------------------------------------
@@ -108,7 +104,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $appTimezone = 'America/Chicago';
+    public $appTimezone = 'America/Chihuahua';
 
     /**
      * --------------------------------------------------------------------------
