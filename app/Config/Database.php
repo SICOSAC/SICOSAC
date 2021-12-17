@@ -30,16 +30,16 @@ class Database extends Config
      */
     public $default = [
         'DSN'      => '',
-        'hostname' => 'localhost', //dominio donde se almacena la base de datos
+        'hostname' => '127.0.0.1', //dominio donde se almacena la base de datos
         'username' => 'root', //usuario root de la base de datos
         'password' => 'Itzamar_04', //contraseña de la base de datos
-        'database' => 'dbSicosac', //nombre de la base de datos
+        'database' => 'dbsicosac', //nombre de la base de datos
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
         'DBDebug'  => (ENVIRONMENT !== 'production'),
-        'charset'  => 'utf8_bin',
-        'DBCollat' => 'utf8_general_ci',
+        'charset'  => 'utf8',
+        'DBCollat' => 'utf8',
         'swapPre'  => '',
         'encrypt'  => false,
         'compress' => false,
@@ -63,7 +63,7 @@ class Database extends Config
         'DBPrefix' => 'db_',  // Needed to ensure we're working correctly with prefixes live. DO NOT REMOVE FOR CI DEVS
         'pConnect' => false,
         'DBDebug'  => (ENVIRONMENT !== 'production'),
-        'charset'  => 'utf8',
+        'charset'  => 'utf8_bin',
         'DBCollat' => 'utf8_general_ci',
         'swapPre'  => '',
         'encrypt'  => false,

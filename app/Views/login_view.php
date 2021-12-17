@@ -1,5 +1,7 @@
 <script>
 	
+	$session=session();
+
     function cerrarModal(){
         $(".modal").removeClass("is-active");
     }
@@ -13,9 +15,17 @@
 		$("#loginAlumno").addClass("is-active");
 	}
 
-
 </script>
-
+<?php
+	$session=session();
+	//verificamos si la llegada del usuario es por un error al intentar iniciar sesión
+	if(isset($_SESSION['flashdata']['errorLogin'])){
+		//mostramos un mensaje de error
+        echo "<script type='text/javascript'>alert('Usuario o contraseña incorrectos');</script>";
+    }
+	//independientemente del motivo, al llegar a esta página se vacía la sesión
+	session_unset();
+?>
 <!DOCTYPE html>
 <html>
 

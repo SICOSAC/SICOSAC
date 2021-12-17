@@ -23,7 +23,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://sicosac.local';
+    public $baseURL = 'http://sicosac.local:8080';
 
     /**
      * --------------------------------------------------------------------------
